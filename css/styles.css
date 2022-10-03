@@ -1,10 +1,22 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 :root {
   /* color */
   --one-text-color: #212121;
   --second-text-color: #757575;
-  --one-backgraund-color: #f5f5f5;
-  /* second-bcg-color: #F5F4FA */
-  --second-backgraund-color: #efedf9;
+  --one-backgraund-color: #ffffff;
+  --second-backgraund-color: #f5f4fa;
   --hero-bcg: #2f303a;
   --akcent-color: #2196f3;
   --second-akcent-color: #ffffff;
@@ -24,8 +36,8 @@
 body {
   font-family: var(--one-font-family);
   color: var(--one-text-color);
-  font-size: 16px;
-  line-height: 1.171;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   background-color: var(--one-backgraund-color);
 }
 /* HEADER */
@@ -43,10 +55,17 @@ body {
   color: var(--akcent-color);
 }
 .site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
   color: var(--one-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--akcent-color);
+}
+a.link.current {
   color: var(--akcent-color);
 }
 .site-contacts .link {
@@ -74,25 +93,23 @@ body {
   color: var(--second-akcent-color);
 }
 .button-hero {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--second-akcent-color);
   background-color: var(--akcent-color);
+  cursor: pointer;
 }
 .title-three {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.714;
-  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 .section-title {
@@ -109,12 +126,14 @@ body {
   background-color: var(--second-akcent-color);
 }
 .title-name {
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .team-text {
+  font-size: 16px;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
@@ -157,9 +176,7 @@ body {
   color: var(--akcent-color);
 }
 /* Сторінка 2 */
-.section-card {
-  background-color: var(--one-backgraund-color);
-}
+
 .button-card {
   font-family: var(--one-font-family);
   font-weight: 500;
@@ -170,10 +187,6 @@ body {
   background-color: var(--second-backgraund-color);
   cursor: pointer;
   border-radius: 4px;
-  width: 112px;
-  height: 38px;
-  left: 726px;
-  top: 174px;
   border: none;
 }
 .button-card:hover,
@@ -181,11 +194,8 @@ body {
   color: var(--second-akcent-color);
   background-color: var(--akcent-color);
 }
-.boxes-top {
-  background-color: var(--card-bcg);
-}
+
 .boxes-title {
-  font-family: var(--one-font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -193,10 +203,7 @@ body {
   color: var(--one-text-color);
 }
 .boxes-text {
-  font-family: var(--one-font-family);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
-  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
