@@ -29,6 +29,7 @@
 
 .list {
   list-style: none;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -82,20 +83,38 @@ a.link.current {
 .site-contacts .link:focus {
   color: var(--akcent-color);
 }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Hero */
 .section-hero {
+  margin-bottom: 99px;
   background-color: var(--hero-bcg);
+  text-align: center;
+  
+  
 }
 .title-hero {
+ 
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
-  text-align: center;
+  
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-akcent-color);
 }
 .button-hero {
+  margin-bottom: 0;
+  text-align: center;
+  min-width: 216px;
+  padding: 10px 32px;
+    border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -104,18 +123,29 @@ a.link.current {
   color: var(--second-akcent-color);
   background-color: var(--akcent-color);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
 }
 .title-three {
+ 
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
 }
 .text {
+  
+ 
   line-height: 1.714;
   color: var(--second-text-color);
 }
-.section-title {
+  .section-benefits {
+margin-bottom: 83px;
+
+  }
+  .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
@@ -124,18 +154,22 @@ a.link.current {
 }
 .section-team {
   background-color: var(--second-backgraund-color);
+  text-align: center;
 }
 .team-card {
   background-color: var(--second-akcent-color);
 }
 .title-name {
-  font-size: 16px;
+  margin-bottom: 10px;
+    font-size: 16px;
   font-weight: 500;
   line-height: 1.187;
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .team-text {
+  
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
@@ -181,6 +215,9 @@ a.link.current {
 /* Сторінка 2 */
 
 .button-card {
+  text-align: center;
+  display: inline-block;
+  padding: 6px 22px;
   font-family: var(--one-font-family);
   font-weight: 500;
   font-size: 16px;
