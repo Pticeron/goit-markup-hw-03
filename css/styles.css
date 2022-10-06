@@ -155,6 +155,7 @@ a.link.current {
 }
 .team-card {
   background-color: var(--second-akcent-color);
+  padding-bottom: 30px;
 }
 .title-name {
   margin-top: 30px;
@@ -239,6 +240,9 @@ a.link.current {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.boxes-top {
+  padding-bottom: 20px;
 }
 .boxes-title {
   margin-bottom: 0;
