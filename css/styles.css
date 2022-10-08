@@ -322,9 +322,24 @@ a.link.current {
   background-color: var(--akcent-color);
 }
 
-.boxes-top {
-  padding-bottom: 20px;
+.boxes {
+  display: flex;
+ flex-wrap: wrap;
+ padding: 0;
+  margin: 0;
+  margin-top: -14px;
+  margin-left: -20px;
 }
+.boxes > .boxes-top {
+    display: flex;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 14px;
+  
+}
+/* .boxes-top {
+  padding-bottom: 20px;
+} */
 
 .boxes-title {
   margin-bottom: 0;
