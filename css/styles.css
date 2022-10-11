@@ -288,6 +288,14 @@ a.link.current {
   padding-bottom: 60px;
 }
 
+.footer-contakt {
+  display: block;
+}
+
+.footer-contakt > .item:not(:last-child) {
+  margin-bottom: 9px;
+}  
+
 .logo-footer {
   font-family: var(--logo-font-style);
   font-weight: 700;
