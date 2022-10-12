@@ -48,8 +48,7 @@ body {
 }
 
 .link {
-  display: inline-block;
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h1,
@@ -78,9 +77,6 @@ img {
 
 .section {
   padding-top: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
-  margin: 0;
 }
 
 .padding {
@@ -309,8 +305,11 @@ a.link.current {
   color: var(--akcent-color);
 }
 
+.add-full {
+ margin-top: 20px;
+}
+
 .footer-adr {
-  margin-top: 20px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
@@ -363,7 +362,6 @@ a.link.current {
 .button {
   display: flex;
   justify-content: center;
-  
   margin-bottom: 50px;
   }
 
